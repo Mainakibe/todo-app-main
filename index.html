@@ -5,32 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="wrapper">
+    <div class="images">
+      <div class="light-mode-image">
+      </div>
+      <div class="dark-mode-image"></div>
+    </div>
+    <div class="container-wrapper">
+      <div class="container">
+        <div class="top">
+          <h1>Todo</h1>
+          <div class="toggle">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <div class="switch">
+                <img src="images/icon-sun.svg" alt="light mode image" class="light-mode">
+                <img src="images/icon-moon.svg" alt="dark mode image" class="dark-mode">
+              </div>
+            </label>
+          </div>
+        </div>
+        <main>
+          <div class="add-item">
+            <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+            <input type="text" id="item" placeholder="Create a new todo...">
+          </div>
+            <ul class="list">
+              <li class="item">
+              <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+              <p class="text">Complete online JavaScript course</p>
+              <img src="images/icon-cross.svg" alt="" id="delete" id="0" job="delete">
+              </li>
+              <li class="item">
+                <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+                
+                <p class="text">Complete online JavaScript course</p>
+                <img src="images/icon-cross.svg" alt="" id="delete" id="0" job="delete">
+              </li>
+              <li class="item">
+                  <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+                  
+                  <p class="text">Complete online JavaScript course</p>
+                  <img src="images/icon-cross.svg" alt="" id="delete" id="0" job="delete">
+                </li>
+                <li class="item">
+                    <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+                    <p class="text">Complete online JavaScript course</p>
+                    <img src="images/icon-cross.svg" alt="">
+                </li>                              
+            </ul>
+          <div class="items-bottom">
+            <!-- Add dynamic number --> 
+            <div class="left">
+              <span class="items-left">items left</span>
+            </div>
+            <div class="middle">
+              <span class="all">All</span>
+              <span class="active">Active</span>
+              <span class="completed">Completed</span>
+            </div>
+            <div class="right">
+              <span class="clear">Clear Completed</span>
+            </div>
+          </div>
+        </main>
+      </div>
+      
+    </div> 
+    <small>Drag and drop to reorder list</small>
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>
