@@ -96,7 +96,7 @@ h1{
     align-items: center;
 }
  .label{
-     height: 35px;
+    height: 35px;
     width: 30px;
     position: relative;
     cursor: pointer;
@@ -144,7 +144,8 @@ main{
     background-color: var(--listItems);
     border: none;
     color: var(--DarkGrayishBlue);
-    font-size: 15px;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 16px;
     font-weight: 400;
     outline: none;
     height: 3rem; 
@@ -152,7 +153,7 @@ main{
 }
 #item::placeholder{
     color: var(--DarkGrayishBlue);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -176,6 +177,7 @@ main{
 }
 #circle{
     color: var(--addItemsIcon);
+    font-size: 25px;
 }
 #circle:hover{
     background: -webkit-linear-gradient(90deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
@@ -185,7 +187,7 @@ main{
 }
 .text{
     color: var(--listItemsText);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     width: 70%;
 }
@@ -225,6 +227,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center; 
+    height: 8vh;
 }
 .left:hover{
     color: var(--hover);
@@ -248,11 +251,12 @@ main{
     font-weight: 700;
     padding: 0 10px;
 }
-.middle span:hover{
+.middle .span-active{
     color: var(--BrightBlue);
+}
+.middle span:hover{
+    color:var(--hover);
     cursor: pointer;
-  
-  
 }
 small{
     color: var(--DarkGrayishBlue);
