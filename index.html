@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js" integrity="sha512-5x7t0fTAVo9dpfbp3WtE2N6bfipUwk7siViWncdDoSz2KwOqVC1N9fDxEOzk0vTThOua/mglfF8NO7uVDLRC8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Todo app</title>
@@ -35,21 +36,59 @@
           </div>
         </div>
         <main>
-          <div class="add-item">
-            <i class="far fa-circle" id="circle" id="0" job="complete"></i>
-            <input type="text" id="item" placeholder="Create a new todo...">
+          <div class="todo-body">
+            <div class="new-task-creator">
+              <form action="">
+                <i class="far fa-circle" id="circle" id="0" job="complete"></i>
+                <input type="text" class="new-task" placeholder="Create a new todo..." aria-label="new task name">
+                  <!-- <button class="btn create" aria-label="create new task">+</button> -->
+              </form>
           </div>
-            <ul class="list">
-              <!-- <li class="item">
-              <i class="far fa-circle" id="circle" id="0" job="complete"></i>
-              <p class="text">Complete online JavaScript course</p>
-              <img src="images/icon-cross.svg" alt="" id="delete" id="0" job="delete">
-              </li>                                -->
-            </ul>
+            <div class="tasks">
+
+              <!-- task 1 -->
+              <div class="task">
+                <input type="checkbox" id="task-1">
+                <label for="task-1">
+                  <span class="custom-checkbox"></span>
+                  create an advanced todo list
+                </label>
+                <img src="images/icon-cross.svg" alt="delete icon">
+              </div>
+
+               <!-- task 2 -->
+               <div class="task">
+                <input type="checkbox" id="task-2">
+                <label for="task-2">
+                  <span class="custom-checkbox"></span>
+                  create an advanced todo list
+                </label>
+                <img src="images/icon-cross.svg" alt="delete icon">
+              </div>
+
+               <!-- task 3 -->
+               <div class="task">
+                <input type="checkbox" id="task-3">
+                <label for="task-3">
+                  <span class="custom-checkbox"></span>
+                  create an advanced todo list
+                </label>
+                <img src="images/icon-cross.svg" alt="delete icon">
+              </div>
+              <div class="task">
+                <input type="checkbox" id="task-4">
+                <label for="task-4">
+                  <span class="custom-checkbox"></span>
+                  create an advanced todo list
+                </label>
+                <img src="images/icon-cross.svg" alt="delete icon">
+              </div>
+            </div>
+          </div>
           <div class="items-bottom">
             <!-- Add dynamic number --> 
             <div class="left">
-              <span class="items-left">items left</span>
+            <h5 class="items-left"> 5 items left</h5>
             </div>
             <div class="middle">
               <span class="all span-active">All</span>
@@ -62,7 +101,6 @@
           </div>
         </main>
       </div>
-      
     </div> 
     <small>Drag and drop to reorder list</small>
   </div>
