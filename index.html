@@ -36,73 +36,64 @@
           </div>
         </div>
         <main>
-          <div class="todo-body">
-            <div class="new-task-creator">
-              <form action="">
-                <i class="far fa-circle" id="circle" id="0" job="complete"></i>
-                <input type="text" class="new-task" placeholder="Create a new todo..." aria-label="new task name">
-                  <!-- <button class="btn create" aria-label="create new task">+</button> -->
-              </form>
-          </div>
-            <div class="tasks">
-
-              <!-- task 1 -->
-              <div class="task">
-                <input type="checkbox" id="task-1">
-                <label for="task-1">
-                  <span class="custom-checkbox"></span>
-                  create an advanced todo list
-                </label>
-                <img src="images/icon-cross.svg" alt="delete icon">
-              </div>
-
-               <!-- task 2 -->
-               <div class="task">
-                <input type="checkbox" id="task-2">
-                <label for="task-2">
-                  <span class="custom-checkbox"></span>
-                  create an advanced todo list
-                </label>
-                <img src="images/icon-cross.svg" alt="delete icon">
-              </div>
-
-               <!-- task 3 -->
-               <div class="task">
-                <input type="checkbox" id="task-3">
-                <label for="task-3">
-                  <span class="custom-checkbox"></span>
-                  create an advanced todo list
-                </label>
-                <img src="images/icon-cross.svg" alt="delete icon">
-              </div>
-              <div class="task">
-                <input type="checkbox" id="task-4">
-                <label for="task-4">
-                  <span class="custom-checkbox"></span>
-                  create an advanced todo list
-                </label>
-                <img src="images/icon-cross.svg" alt="delete icon">
-              </div>
+          <div class="add-new-item flex-row">
+            <span></span>
+            <input type="text" placeholder="Create a new todo" name="addItem" id="addItem">
+        </div>
+        <section class="content">  
+          <ul>
+              <!-- <li>
+                  <label class="list-item">
+                      <input type="checkbox" name="todoItem" checked>
+                      <span class="checkmark"></span>
+                      <span class="text">Text</span>
+                  </label> 
+                  <span class="remove"></span>
+              </li>
+              <li>
+                  <label class="list-item">
+                      <input type="checkbox" name="todoItem">
+                      <span class="checkmark"></span>
+                      <span class="text">Text</span>
+                  </label> 
+                  <span class="remove"></span>
+              </li>
+              <li>
+                  <label class="list-item">
+                      <input type="checkbox" name="todoItem">
+                      <span class="checkmark"></span>
+                      <span class="text">Text</span>
+                  </label> 
+                  <span class="remove"></span>
+              </li> -->
+          </ul>
+        </section>
+        <div class="bottom-items">
+            <div class="bottom-links">
+              <div class="items-left"><span class="left"></span> Items left</div>
+            <div class="filter flex-row">
+              <label>
+                  <input type="radio"name="filter" id="all" checked>
+                  <span>All</span>
+              </label>
+              <label>
+                  <input type="radio"name="filter" id="active">
+                  <span>Active</span>
+              </label>
+              <label>
+                  <input type="radio"name="filter" id="completed">
+                  <span>Completed</span>
+              </label>
             </div>
-          </div>
-          <div class="items-bottom">
-            <!-- Add dynamic number --> 
-            <div class="left">
-            <h5 class="items-left"> 5 items left</h5>
+            <span class="clear">Clear Completed</span>
             </div>
-            <div class="middle">
-              <span class="all span-active">All</span>
-              <span class="active">Active</span>
-              <span class="completed">Completed</span>
-            </div>
-            <div class="right">
-              <span class="clear">Clear Completed</span>
+            <div class="footer">
+              <small>Drag and drop to reorder list</small>
             </div>
           </div>
         </main>
       </div>
     </div> 
-    <small>Drag and drop to reorder list</small>
   </div>
   <script src="./main.js"></script>
 </body>
